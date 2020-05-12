@@ -1,9 +1,10 @@
 import json
 
-from curl_to_swagger_core.service import ConverterService
-from flask import Response
+from flask import request, Response
 from flask_restful import Resource
 from injector import inject
+
+from curl_to_swagger_core.services import ConverterService
 
 
 class CurlToSwaggerResource(Resource):
@@ -13,5 +14,6 @@ class CurlToSwaggerResource(Resource):
         self._converter_service = converter_service
 
     def post(self):
+        data = request.get_json()
         response = json.dumps({'id': 'helloworld'})
         return Response(status=201, response=response, mimetype='application/json')

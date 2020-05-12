@@ -2,6 +2,7 @@
   <dictionary name="nicola">
     <words>
       <w>ctsw</w>
+      <w>pymongo</w>
     </words>
   </dictionary>
 </component>
