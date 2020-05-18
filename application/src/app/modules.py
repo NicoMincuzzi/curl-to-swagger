@@ -2,8 +2,8 @@ import logging
 
 from injector import Module, Binder, singleton
 
-from curl_to_swagger.service.converter_service import ConverterServiceImpl
-from curl_to_swagger_core.services import ConverterService
+from app.service.converter_service import ConverterServiceImpl
+from app.service.services import ConverterService
 
 logger = logging.getLogger(f'c2s.{__name__}')
 

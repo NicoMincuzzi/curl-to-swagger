@@ -1,7 +1,7 @@
 import logging
 import signal
 
-from curl_to_swagger_api.application import CurlToSwaggerApplication
+from app.application import CurlToSwaggerApplication
 
 logger = logging.getLogger(f'c2s.{__name__}')
 

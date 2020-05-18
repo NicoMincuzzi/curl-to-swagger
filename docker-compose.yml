@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  curl_to_swagger:
+    init: true
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      - PORT_APP=4055
+      - WORKERS=4
+      - THREADS=50
+    ports:
+      - 4055:4055

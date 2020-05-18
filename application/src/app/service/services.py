@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from curl_to_swagger_core.model.model import PayloadModel, SwaggerModel, CurlModel
+from app.model.model import PayloadModel, CurlModel, SwaggerModel
 
 
 class ConverterService(ABC):
