@@ -4,7 +4,7 @@ from flask import request, Response
 from flask_restful import Resource
 from injector import inject
 
-from app.service.services import ConverterService
+from curl_to_swagger.service.services import ConverterService
 
 
 class CurlToSwaggerResource(Resource):

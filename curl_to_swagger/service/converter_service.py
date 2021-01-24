@@ -1,7 +1,7 @@
 import logging
 
-from app.model.model import CurlModel, PayloadModel, SwaggerModel
-from app.service.services import ConverterService
+from curl_to_swagger.model.model import CurlModel, PayloadModel, SwaggerModel
+from curl_to_swagger.service.services import ConverterService
 
 logger = logging.getLogger(f'c2s.{__name__}')
 

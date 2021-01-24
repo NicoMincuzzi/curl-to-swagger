@@ -5,8 +5,8 @@ from flask_injector import FlaskInjector
 from flask_restful import Api
 from injector import Injector
 
-from app.modules import ConfigurationModule, CurlToSwaggerModule
-from app.resource.curltoswagger_resources import CurlToSwaggerResource
+from curl_to_swagger.modules import ConfigurationModule, CurlToSwaggerModule
+from curl_to_swagger.resource.curltoswagger_resources import CurlToSwaggerResource
 
 logger = logging.getLogger(f'c2s.{__name__}')
 
