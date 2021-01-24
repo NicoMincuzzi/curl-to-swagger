@@ -4,14 +4,14 @@ from flask import request, Response
 from flask_restful import Resource
 from injector import inject
 
-from curl_to_swagger.service.services import ConverterService
+from curl_to_swagger.service.services import UrlService
 
 
 class EndpointResource(Resource):
 
     @inject
-    def __init__(self, converter_service: ConverterService):
-        self._converter_service = converter_service
+    def __init__(self, url_service: UrlService):
+        self._url_service = url_service
 
     def post(self):
         data = request.get_json()
