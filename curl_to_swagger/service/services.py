@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from curl_to_swagger.model.model import PayloadModel, CurlModel, SwaggerModel
+from curl_to_swagger.model.model import UrlModel, HeaderModel, SwaggerModel
 
 
 class SwaggerService(ABC):
@@ -13,19 +13,19 @@ class SwaggerService(ABC):
 class UrlService(ABC):
 
     @abstractmethod
-    def create_url(self, payload_model: PayloadModel) -> CurlModel:
+    def create_url(self, url_model: UrlModel) -> HeaderModel:
         pass
 
 
 class HeaderService(ABC):
 
     @abstractmethod
-    def create_header(self, payload_model: PayloadModel) -> CurlModel:
+    def create_header(self, payload_model: UrlModel) -> HeaderModel:
         pass
 
 
 class BodyService(ABC):
 
     @abstractmethod
-    def create_body(self, payload_model: PayloadModel) -> CurlModel:
+    def create_body(self, payload_model: UrlModel) -> HeaderModel:
         pass

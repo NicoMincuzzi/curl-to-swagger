@@ -1,6 +1,6 @@
 import logging
 
-from curl_to_swagger.model.model import CurlModel, PayloadModel
+from curl_to_swagger.model.model import HeaderModel, UrlModel
 from curl_to_swagger.service.services import BodyService
 
 logger = logging.getLogger(f'c2s.{__name__}')
@@ -11,5 +11,5 @@ class BodyServiceImpl(BodyService):
     def __init__(self):
         pass
 
-    def create_body(self, payload_model: PayloadModel) -> CurlModel:
+    def create_body(self, payload_model: UrlModel) -> HeaderModel:
         pass
