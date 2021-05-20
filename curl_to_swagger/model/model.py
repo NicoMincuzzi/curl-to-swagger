@@ -2,12 +2,13 @@ from dataclasses import dataclass
 
 
 @dataclass
-class PayloadModel:
-    payload: str
+class UrlModel:
+    http_method: str
+    url: str
 
 
 @dataclass
-class CurlModel:
+class HeaderModel:
     payload: str
 
 
