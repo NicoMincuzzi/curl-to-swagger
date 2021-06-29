@@ -20,7 +20,7 @@ class UrlService(ABC):
 class HeaderService(ABC):
 
     @abstractmethod
-    def create_header(self, payload_model: UrlModel):
+    def create_header(self, base64_headers: str):
         pass
 
 
