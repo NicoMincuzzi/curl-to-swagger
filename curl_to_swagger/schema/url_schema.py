@@ -1,6 +1,6 @@
 from marshmallow import fields, post_load
 
-from curl_to_swagger.model.model import UrlModel
+from curl_to_swagger.model.model import UriModel
 from curl_to_swagger.schema.base_schema import BaseSchema
 
 
@@ -10,4 +10,4 @@ class UrlSchema(BaseSchema):
 
     @post_load
     def make_model(self, data):
-        return UrlModel(**data)
+        return UriModel(**data)

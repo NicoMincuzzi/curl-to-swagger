@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class UrlModel:
+class UriModel:
     http_method: str
     url: str
 
