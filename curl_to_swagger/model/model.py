@@ -4,7 +4,7 @@ from dataclasses import dataclass
 @dataclass
 class UriModel:
     http_method: str
-    url: str
+    uri: str
 
 
 @dataclass
