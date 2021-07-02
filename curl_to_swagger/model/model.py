@@ -3,8 +3,8 @@ from dataclasses import dataclass
 
 @dataclass
 class UriModel:
-    http_method: str
-    uri: str
+    http_method: str = 'GET'
+    uri: str = ''
 
 
 @dataclass

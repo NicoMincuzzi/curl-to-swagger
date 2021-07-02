@@ -19,3 +19,10 @@ class TestUrlServiceImpl(TestCase):
         expected = {'httpMethod': 'GET', 'protocol': 'https', 'domain': 'it.test.com',
                     'resource': '/service/api/v2/products/b43e508d-ef45-4c15-97ac-ed468ad5bcdc'}
         self._uri_repository.persist.assert_called_once_with(expected)
+
+    def test_create_url_no_specific_http_method(self):
+        uri = UriModel(uri='https://it.test.com/service/api/v2/products/b43e508d-ef45-4c15-97ac-ed468ad5bcdc')
+        self._urlService.create_url(uri)
+        expected = {'httpMethod': 'GET', 'protocol': 'https', 'domain': 'it.test.com',
+                    'resource': '/service/api/v2/products/b43e508d-ef45-4c15-97ac-ed468ad5bcdc'}
+        self._uri_repository.persist.assert_called_once_with(expected)
