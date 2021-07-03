@@ -5,7 +5,7 @@
 [![Version](https://img.shields.io/badge/version-v0.1.0-green)](https://github.com/NicoMincuzzi/curl-to-swagger) 
 ![GitHub repo size](https://img.shields.io/github/repo-size/NicoMincuzzi/curl-to-swagger)
 
-The aim of c2S is to provide a tool to generate a file `.yaml` for [Swagger](https://swagger.io/) by a [cURL](https://curl.se/).
+The aim of c2S is to provide a tool to generate a file `.yaml` for [Swagger](https://swagger.io/) toolset by a [cURL](https://curl.se/).
 
 ## Run with Docker
 
