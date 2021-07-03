@@ -9,9 +9,9 @@ The aim of c2S is to provide a tool to generate a file `.yaml` for [Swagger](htt
 
 ## Run with Docker
 
-docker build -t c2s:latest .
+`docker build -t c2s:latest .`
 
-docker container run -e "WORKERS=4" -e "THREADS=4" -e "PORT_APP=4055" -p 4055:4055 c2s:latest
+`docker container run -e "WORKERS=4" -e "THREADS=4" -e "PORT_APP=4055" -p 4055:4055 c2s:latest`
 
 
 
