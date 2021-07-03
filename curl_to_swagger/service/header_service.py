@@ -1,6 +1,7 @@
 import base64
 import logging
 
+from curl_to_swagger.model.model import HeaderModel
 from curl_to_swagger.service.services import HeaderService
 
 logger = logging.getLogger(f'c2s.{__name__}')
@@ -16,8 +17,8 @@ class HeaderServiceImpl(HeaderService):
     def __init__(self, header_repository: HeaderRepository):
         self._header_repository = header_repository
 
-    def create_header(self, base64_headers: str):
-        message = base64.b64decode(base64_headers).decode('utf-8')
+    def create_header(self, headers_model: HeaderModel):
+        message = base64.b64decode(headers_model.headers).decode('utf-8')
         headers_dict = self.build_headers(message)
         self._header_repository.create(headers_dict)
 

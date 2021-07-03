@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Optional
 
 
 @dataclass
@@ -9,13 +10,14 @@ class UriModel:
 
 @dataclass
 class HeaderModel:
+    id: str
     headers: str
 
 
 @dataclass
 class BodyModel:
     id: str
-    payload: str
+    payload: Optional[str]
 
 
 @dataclass
