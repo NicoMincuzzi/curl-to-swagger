@@ -4,9 +4,9 @@ from curl_to_swagger.model.model import UriModel
 from curl_to_swagger.schema.base_schema import BaseSchema
 
 
-class UrlSchema(BaseSchema):
+class UriSchema(BaseSchema):
     http_method = fields.String(data_key='httpMethod', required=True)
-    url = fields.String(data_key='url', required=True)
+    uri = fields.String(data_key='uri', required=True)
 
     @post_load
     def make_model(self, data):

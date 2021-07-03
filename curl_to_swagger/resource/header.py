@@ -18,23 +18,3 @@ class HeaderResource(Resource):
         self._header_service.create_header()
         response = json.dumps({'id': 'endpoint creato'})
         return Response(status=201, response=response, mimetype='application/json')
-
-    def get(self, endpoint_id):
-        data = request.get_json()
-        response = json.dumps({'id': 'endpoint creato'})
-        return Response(status=200, response=response, mimetype='application/json')
-
-    def put(self):
-        data = request.get_json()
-        response = json.dumps({'id': 'endpoint creato'})
-        return Response(status=204, response=response, mimetype='application/json')
-
-    def patch(self):
-        data = request.get_json()
-        response = json.dumps({'id': 'endpoint creato'})
-        return Response(status=204, response=response, mimetype='application/json')
-
-    def delete(self):
-        data = request.get_json()
-        response = json.dumps({'id': 'endpoint creato'})
-        return Response(status=201, response=response, mimetype='application/json')
