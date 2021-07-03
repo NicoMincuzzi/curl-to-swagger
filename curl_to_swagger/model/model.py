@@ -9,6 +9,12 @@ class UriModel:
 
 @dataclass
 class HeaderModel:
+    headers: str
+
+
+@dataclass
+class BodyModel:
+    id: str
     payload: str
 
 
