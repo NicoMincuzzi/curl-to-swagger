@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "curl_to_swagger"
 version = "0.1.0"
-description = ""
+description = "Generate a file .yaml for Swagger toolset by a cURL."
 authors = ["Nicola Mincuzzi <nicolamincuzzi88@gmail.com>"]
 
 [tool.poetry.dependencies]
